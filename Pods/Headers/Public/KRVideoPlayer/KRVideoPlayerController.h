@@ -1,0 +1,1 @@
+../../../KRVideoPlayer/Pod/Classes/KRVideoPlayerController.h

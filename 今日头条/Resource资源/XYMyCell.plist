@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>isHiddenSubtitle</key>
+			<true/>
+			<key>title</key>
+			<string>消息通知</string>
+			<key>subtitle</key>
+			<string></string>
+			<key>isHiddenLine</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>isHiddenSubtitle</key>
+			<true/>
+			<key>title</key>
+			<string>离 线</string>
+			<key>subtitle</key>
+			<string></string>
+			<key>isHiddenLine</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>isHiddenSubtitle</key>
+			<true/>
+			<key>title</key>
+			<string>活 动</string>
+			<key>subtitle</key>
+			<string></string>
+			<key>isHiddenLine</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>isHiddenSubtitle</key>
+			<false/>
+			<key>title</key>
+			<string>商 城</string>
+			<key>subtitle</key>
+			<string>特卖，电影</string>
+			<key>isHiddenLine</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>isHiddenSubtitle</key>
+			<false/>
+			<key>title</key>
+			<string>订单</string>
+			<key>subtitle</key>
+			<string></string>
+			<key>isHiddenLine</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>isHiddenSubtitle</key>
+			<true/>
+			<key>title</key>
+			<string>我要爆料</string>
+			<key>subtitle</key>
+			<string></string>
+			<key>isHiddenLine</key>
+			<false/>
+		</dict>
+		<dict>
+			<key>isHiddenSubtitle</key>
+			<true/>
+			<key>title</key>
+			<string>反馈</string>
+			<key>subtitle</key>
+			<string></string>
+			<key>isHiddenLine</key>
+			<true/>
+		</dict>
+	</array>
+</array>
+</plist>

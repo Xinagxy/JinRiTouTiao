@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="A8l-fQ-GsJ" customClass="XYTopConcernCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A8l-fQ-GsJ" id="68U-Sb-uhe">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Iz-Gt-5dV">
+                        <rect key="frame" x="15" y="16" width="36" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="36" id="b9Y-wg-0qK"/>
+                            <constraint firstAttribute="height" constant="36" id="yds-hi-lMb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoT-l4-a4n">
+                        <rect key="frame" x="61" y="0.0" width="40" height="67"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tnn-K0-YTJ">
+                        <rect key="frame" x="268" y="26" width="37" height="16"/>
+                        <color key="backgroundColor" red="0.94509803920000002" green="0.36862745099999999" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="fNW-gY-UD1"/>
+                            <constraint firstAttribute="width" constant="37" id="pAD-Ea-Ksm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="NEW">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fXL-DP-biP" userLabel="line">
+                        <rect key="frame" x="15" y="65" width="305" height="1"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="l1i-re-IH5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JoT-l4-a4n" firstAttribute="leading" secondItem="8Iz-Gt-5dV" secondAttribute="trailing" constant="10" id="5q9-Ev-MdJ"/>
+                    <constraint firstAttribute="bottom" secondItem="JoT-l4-a4n" secondAttribute="bottom" id="SBS-Ye-w78"/>
+                    <constraint firstItem="8Iz-Gt-5dV" firstAttribute="leading" secondItem="68U-Sb-uhe" secondAttribute="leading" constant="15" id="enO-d9-t9N"/>
+                    <constraint firstItem="Tnn-K0-YTJ" firstAttribute="centerY" secondItem="68U-Sb-uhe" secondAttribute="centerY" id="hDI-3c-qIw"/>
+                    <constraint firstAttribute="bottom" secondItem="fXL-DP-biP" secondAttribute="bottom" id="hUE-3H-zT0"/>
+                    <constraint firstAttribute="trailing" secondItem="Tnn-K0-YTJ" secondAttribute="trailing" constant="15" id="qro-tT-QRP"/>
+                    <constraint firstItem="JoT-l4-a4n" firstAttribute="top" secondItem="68U-Sb-uhe" secondAttribute="top" id="tGO-V5-uJG"/>
+                    <constraint firstItem="8Iz-Gt-5dV" firstAttribute="centerY" secondItem="68U-Sb-uhe" secondAttribute="centerY" id="vW8-SX-4XS"/>
+                    <constraint firstAttribute="trailing" secondItem="fXL-DP-biP" secondAttribute="trailing" id="ynT-kb-2HG"/>
+                    <constraint firstItem="fXL-DP-biP" firstAttribute="leading" secondItem="68U-Sb-uhe" secondAttribute="leading" constant="15" id="zAZ-iw-77j"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="262" y="341.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="84P-Bo-qDp" customClass="XYProgressView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQp-DH-6dG" userLabel="当前时间">
+                    <rect key="frame" x="18" y="0.0" width="35" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQz-9r-LZZ" userLabel="总时长">
+                    <rect key="frame" x="521" y="0.0" width="34" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cv7-gl-vFL" userLabel="全屏按钮">
+                    <rect key="frame" x="560" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="hNN-z7-SXF"/>
+                    </constraints>
+                    <state key="normal" image="video_fullscreen"/>
+                    <connections>
+                        <action selector="fullButton:" destination="84P-Bo-qDp" eventType="touchUpInside" id="Rxd-YB-yps"/>
+                    </connections>
+                </button>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="adM-P5-5Zk">
+                    <rect key="frame" x="60" y="19" width="448" height="2"/>
+                    <color key="progressTintColor" red="0.97146857480000004" green="1" blue="0.69036651329999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="trackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                </progressView>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0v2-uj-rbU" userLabel="进度条" customClass="XYSilder">
+                    <rect key="frame" x="58" y="4" width="452" height="32"/>
+                    <color key="minimumTrackTintColor" red="0.96470588239999999" green="0.35686274509999999" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="maximumTrackTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="sliderCahnger:" destination="84P-Bo-qDp" eventType="valueChanged" id="Hb0-4U-1AX"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="jQz-9r-LZZ" secondAttribute="bottom" id="1gz-G0-kED"/>
+                <constraint firstItem="0v2-uj-rbU" firstAttribute="trailing" secondItem="adM-P5-5Zk" secondAttribute="trailing" id="22E-Nf-34v"/>
+                <constraint firstItem="jQz-9r-LZZ" firstAttribute="top" secondItem="84P-Bo-qDp" secondAttribute="top" id="4Ad-Ri-u5E"/>
+                <constraint firstAttribute="bottom" secondItem="UQp-DH-6dG" secondAttribute="bottom" id="B3u-Ha-Hoa"/>
+                <constraint firstItem="jQz-9r-LZZ" firstAttribute="leading" secondItem="0v2-uj-rbU" secondAttribute="trailing" constant="13" id="En6-3M-DOP"/>
+                <constraint firstItem="Cv7-gl-vFL" firstAttribute="leading" secondItem="jQz-9r-LZZ" secondAttribute="trailing" constant="5" id="Epo-lm-7oN"/>
+                <constraint firstItem="adM-P5-5Zk" firstAttribute="top" secondItem="84P-Bo-qDp" secondAttribute="top" constant="19" id="GnA-gQ-tEk"/>
+                <constraint firstAttribute="bottom" secondItem="0v2-uj-rbU" secondAttribute="bottom" constant="5" id="JOd-jt-yh2"/>
+                <constraint firstAttribute="trailing" secondItem="Cv7-gl-vFL" secondAttribute="trailing" id="LNv-oa-0pM"/>
+                <constraint firstItem="UQp-DH-6dG" firstAttribute="leading" secondItem="84P-Bo-qDp" secondAttribute="leading" constant="18" id="LcY-uP-igm"/>
+                <constraint firstAttribute="bottom" secondItem="Cv7-gl-vFL" secondAttribute="bottom" id="Lth-fZ-QHf"/>
+                <constraint firstAttribute="trailing" secondItem="adM-P5-5Zk" secondAttribute="trailing" constant="92" id="MIh-bf-0up"/>
+                <constraint firstItem="0v2-uj-rbU" firstAttribute="leading" secondItem="UQp-DH-6dG" secondAttribute="trailing" constant="7" id="MLv-MM-vtP"/>
+                <constraint firstItem="0v2-uj-rbU" firstAttribute="top" secondItem="84P-Bo-qDp" secondAttribute="top" constant="5" id="Mrl-gt-dKk"/>
+                <constraint firstItem="UQp-DH-6dG" firstAttribute="top" secondItem="84P-Bo-qDp" secondAttribute="top" id="SqD-NK-6sN"/>
+                <constraint firstItem="adM-P5-5Zk" firstAttribute="leading" secondItem="84P-Bo-qDp" secondAttribute="leading" constant="60" id="qNV-fc-n2U"/>
+                <constraint firstItem="0v2-uj-rbU" firstAttribute="top" secondItem="84P-Bo-qDp" secondAttribute="top" constant="4" id="woa-Xo-how"/>
+                <constraint firstItem="0v2-uj-rbU" firstAttribute="leading" secondItem="adM-P5-5Zk" secondAttribute="leading" id="xEW-ev-zLR"/>
+                <constraint firstAttribute="bottom" secondItem="adM-P5-5Zk" secondAttribute="bottom" constant="19" id="xRC-LE-lRe"/>
+                <constraint firstItem="Cv7-gl-vFL" firstAttribute="top" secondItem="84P-Bo-qDp" secondAttribute="top" id="zAR-VR-VoC"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Mrl-gt-dKk"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="CacheProgress" destination="adM-P5-5Zk" id="x0e-Os-fL0"/>
+                <outlet property="currentTimeLable" destination="UQp-DH-6dG" id="P9s-38-P64"/>
+                <outlet property="fullSrceenBut" destination="Cv7-gl-vFL" id="fp4-6D-MFF"/>
+                <outlet property="slider" destination="0v2-uj-rbU" id="mBa-xV-BVs"/>
+                <outlet property="totalTimeLable" destination="jQz-9r-LZZ" id="cm3-NL-hpP"/>
+            </connections>
+            <point key="canvasLocation" x="120" y="317"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="video_fullscreen" width="20" height="20"/>
+    </resources>
+</document>

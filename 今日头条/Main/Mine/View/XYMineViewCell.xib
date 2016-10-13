@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MineViewCell" id="QAj-w6-HJp" customClass="XYMineViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QAj-w6-HJp" id="B8W-MC-2Zk">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right_setup_12x16_" translatesAutoresizingMaskIntoConstraints="NO" id="j6o-7f-dJd">
+                        <rect key="frame" x="287" y="14" width="12" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="EbJ-Cp-0We"/>
+                            <constraint firstAttribute="height" constant="16" id="P4z-3O-iRz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52F-y1-Owe">
+                        <rect key="frame" x="30" y="0.0" width="44" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xt8-EP-DSA">
+                        <rect key="frame" x="84" y="16" width="36" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Oes-Em-C3V"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.70588235290000001" green="0.70588235290000001" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSg-1Z-U7x" userLabel="line">
+                        <rect key="frame" x="30" y="42" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="X8q-aH-Lcb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="52F-y1-Owe" firstAttribute="leading" secondItem="B8W-MC-2Zk" secondAttribute="leading" constant="30" id="M4E-PT-CAh"/>
+                    <constraint firstAttribute="trailing" secondItem="CSg-1Z-U7x" secondAttribute="trailing" id="OVm-fh-iMw"/>
+                    <constraint firstAttribute="trailing" secondItem="j6o-7f-dJd" secondAttribute="trailing" constant="21" id="btn-SF-vjd"/>
+                    <constraint firstItem="Xt8-EP-DSA" firstAttribute="centerY" secondItem="B8W-MC-2Zk" secondAttribute="centerY" constant="5" id="dfE-8p-VU9"/>
+                    <constraint firstItem="j6o-7f-dJd" firstAttribute="centerY" secondItem="B8W-MC-2Zk" secondAttribute="centerY" id="j5J-AC-KUU"/>
+                    <constraint firstItem="CSg-1Z-U7x" firstAttribute="leading" secondItem="52F-y1-Owe" secondAttribute="leading" id="naM-m5-zcj"/>
+                    <constraint firstAttribute="bottom" secondItem="CSg-1Z-U7x" secondAttribute="bottom" id="upE-HW-7i1"/>
+                    <constraint firstItem="Xt8-EP-DSA" firstAttribute="leading" secondItem="52F-y1-Owe" secondAttribute="trailing" constant="10" id="wIm-v0-jfG"/>
+                    <constraint firstAttribute="bottom" secondItem="52F-y1-Owe" secondAttribute="bottom" id="xsj-YR-UaN"/>
+                    <constraint firstItem="52F-y1-Owe" firstAttribute="top" secondItem="B8W-MC-2Zk" secondAttribute="top" id="y78-Hv-Zmv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="MineName" destination="52F-y1-Owe" id="SbA-Z9-o9X"/>
+                <outlet property="MinelibName" destination="Xt8-EP-DSA" id="7Fi-B4-9zn"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_right_setup_12x16_" width="12" height="16"/>
+    </resources>
+</document>
